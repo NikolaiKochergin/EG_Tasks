@@ -9,8 +9,6 @@ namespace Week_3_HomeTask_ChessBoard
         [SerializeField] private Material _materialWhite;
         [SerializeField] private int _boardSize;
 
-        private bool _isHonest = true;
-
         private void Start()
         {
             SpawnBoard();
