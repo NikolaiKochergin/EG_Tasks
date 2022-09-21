@@ -998,8 +998,8 @@ Camera:
   m_GameObject: {fileID: 1650164548}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.536596, g: 0.6479753, b: 0.823, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1132,8 +1132,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78
-  m_fontSizeBase: 78
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -196.7583, y: 0, z: 0, w: -42.707214}
+  m_margin: {x: -703.88403, y: 0, z: 0, w: -42.707214}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1275,7 +1275,7 @@ MonoBehaviour:
   _coinPrefab: {fileID: 54789484869102619, guid: 810b584dd233cef4192cb93ff4fbc080, type: 3}
   _text: {fileID: 1781386224}
   _coinCount: 20
-  _spawnWidth: 10
+  _spawnWidth: 9
 --- !u!1 &1940344192
 GameObject:
   m_ObjectHideFlags: 0
