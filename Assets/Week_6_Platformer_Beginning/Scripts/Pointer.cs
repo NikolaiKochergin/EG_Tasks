@@ -24,6 +24,9 @@ namespace Week_6_Platformer_Beginning
             _plane.Raycast(ray, out float distance);
             Vector3 point = ray.GetPoint(distance);
             _aim.transform.position = point;
+
+            Vector3 toAim = _aim.position - transform.position;
+            transform.rotation = Quaternion.LookRotation(toAim);
         }
     }
 }
