@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class Follower : MonoBehaviour
+namespace Week_6_Platformer_Beginning
 {
-    [SerializeField] private Transform _target;
-    [SerializeField] private float _followRate;
-
-    private void Update()
+    public class Follower : MonoBehaviour
     {
-        transform.position = Vector3.Lerp(transform.position, _target.position, Time.deltaTime * _followRate);
+        [SerializeField] private Transform _target;
+        [SerializeField] private float _followRate;
+
+        private void Update()
+        {
+            transform.position = Vector3.Lerp(transform.position, _target.position, Time.deltaTime * _followRate);
+        }
     }
 }

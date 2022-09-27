@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class Head : MonoBehaviour
+namespace Week_6_Platformer_Beginning
 {
-    [SerializeField] private Transform _target;
-
-    private void Update()
+    public class Head : MonoBehaviour
     {
-        transform.position = _target.position;
+        [SerializeField] private Transform _target;
+
+        private void Update()
+        {
+            transform.position = _target.position;
+        }
     }
 }
