@@ -4,7 +4,7 @@ namespace Week_6_Platformer_Beginning
 {
     public class Pointer : MonoBehaviour
     {
-        [SerializeField] private Transform _aim;
+        [SerializeField] private Aim _aim;
 
         private Camera _camera;
         private Plane _plane;
@@ -25,7 +25,7 @@ namespace Week_6_Platformer_Beginning
             Vector3 point = ray.GetPoint(distance);
             _aim.transform.position = point;
 
-            Vector3 toAim = _aim.position - transform.position;
+            Vector3 toAim = _aim.transform.position - transform.position;
             transform.rotation = Quaternion.LookRotation(toAim);
         }
     }
