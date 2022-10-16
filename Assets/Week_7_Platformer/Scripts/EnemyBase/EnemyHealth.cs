@@ -5,10 +5,10 @@ namespace Week_7_Platformer
 {
     public class EnemyHealth : MonoBehaviour
     {
-        [SerializeField] private int _value;
+        [SerializeField] [Min(0)] private int _value = 1;
 
         public UnityEvent DamageTaken;
-        
+
         public void TakeDamage(int damageValue)
         {
             _value -= damageValue;
