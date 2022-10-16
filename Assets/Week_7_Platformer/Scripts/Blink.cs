@@ -21,7 +21,8 @@ namespace Week_7_Platformer
             for (float t = 0; t < 1; t += Time.deltaTime / _duration)
             {
                 foreach (var renderer in _renderers)
-                    renderer.material.SetColor(EmissionColor,
+                foreach (var material in renderer.materials)
+                    material.SetColor(EmissionColor,
                         new Color(Mathf.Sin(t * _friquency) * 0.5f + 0.5f, 0, 0, 0));
 
                 yield return null;
