@@ -8,6 +8,7 @@ namespace Week_7_Platformer
         [SerializeField] private AudioSource _addHealthSound;
         [SerializeField] private HealthUI _healthUI;
         [SerializeField] private DamageScreen _damageScreen;
+        [SerializeField] private Blink _blink;
         [SerializeField] private int _value;
         [SerializeField] private int _maxValue = 5;
 
@@ -35,6 +36,7 @@ namespace Week_7_Platformer
                 _takeDamageSound.Play();
                 _healthUI.DisplayHealth(_value);
                 _damageScreen.StartEffect();
+                _blink.StartBlink();
             }
         }
 
