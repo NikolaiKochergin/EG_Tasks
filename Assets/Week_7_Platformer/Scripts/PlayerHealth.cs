@@ -1,18 +1,18 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Week_7_Platformer
 {
     public class PlayerHealth : MonoBehaviour
     {
-        [SerializeField] private AudioSource _takeDamageSound;
         [SerializeField] private AudioSource _addHealthSound;
         [SerializeField] private HealthUI _healthUI;
-        [SerializeField] private DamageScreen _damageScreen;
-        [SerializeField] private Blink _blink;
         [SerializeField] private int _value;
         [SerializeField] private int _maxValue = 5;
 
         private bool _invulnerable;
+
+        public UnityEvent DamageTaken;
 
         private void Start()
         {
@@ -33,10 +33,8 @@ namespace Week_7_Platformer
 
                 _invulnerable = true;
                 Invoke(nameof(StopInvulnerable), 1f);
-                _takeDamageSound.Play();
                 _healthUI.DisplayHealth(_value);
-                _damageScreen.StartEffect();
-                _blink.StartBlink();
+                DamageTaken?.Invoke();
             }
         }
 
