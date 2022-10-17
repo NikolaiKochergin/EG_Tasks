@@ -273,3 +273,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 2202526280101594545}
   _effectPrefab: {fileID: 198010694575142552, guid: 639ffe8a2dcaab14fa53988d89810e9d, type: 3}
+  _damage: 1

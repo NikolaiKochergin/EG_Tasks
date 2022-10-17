@@ -6,8 +6,10 @@ namespace Week_7_Platformer
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private ParticleSystem _effectPrefab;
+        [SerializeField] [Min(0)] private int _damage = 1;
 
         public Rigidbody Rigidbody => _rigidbody;
+        public int Damage => _damage;
 
         private void Start()
         {
@@ -15,6 +17,12 @@ namespace Week_7_Platformer
         }
 
         private void OnCollisionEnter(Collision collision)
+        {
+            Instantiate(_effectPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
+        private void OnTriggerEnter(Collider other)
         {
             Instantiate(_effectPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);

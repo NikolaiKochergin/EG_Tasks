@@ -15,7 +15,7 @@ namespace Week_7_Platformer
 
             var bullet = collision.rigidbody.GetComponent<Bullet>();
 
-            if (bullet) _enemyHealth.TakeDamage(1);
+            if (bullet) _enemyHealth.TakeDamage(bullet.Damage);
 
         }
     }
