@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Week_7_Platformer
+namespace Week_8_Platformer
 {
     public class Rabbit : MonoBehaviour
     {

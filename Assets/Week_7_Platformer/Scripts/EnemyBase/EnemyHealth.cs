@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Week_7_Platformer
+namespace Week_8_Platformer
 {
     public class EnemyHealth : MonoBehaviour
     {

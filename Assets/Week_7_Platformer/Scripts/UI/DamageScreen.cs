@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Week_7_Platformer
+namespace Week_8_Platformer
 {
     public class DamageScreen : MonoBehaviour
     {

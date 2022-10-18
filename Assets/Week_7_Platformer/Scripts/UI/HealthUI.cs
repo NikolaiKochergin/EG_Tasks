@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Week_7_Platformer
+namespace Week_8_Platformer
 {
     public class HealthUI : MonoBehaviour
     {
