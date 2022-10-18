@@ -8,7 +8,9 @@ namespace Week_7_Platformer
 
         private void OnTriggerEnter(Collider other)
         {
-            var bullet = other.GetComponentInParent<Bullet>();
+            if(other.attachedRigidbody == null) return;
+            
+            var bullet = other.attachedRigidbody.GetComponent<Bullet>();
 
             if (bullet) _enemyHealth.TakeDamage(bullet.Damage);
         }

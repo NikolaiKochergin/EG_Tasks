@@ -8,7 +8,9 @@ namespace Week_7_Platformer
 
         private void OnTriggerEnter(Collider other)
         {
-            var playerHealth = other.GetComponentInParent<PlayerHealth>();
+            if(other.attachedRigidbody == null) return;
+            
+            var playerHealth = other.attachedRigidbody.GetComponent<PlayerHealth>();
 
             if (playerHealth) playerHealth.TakeDamage(_damageValue);
         }
