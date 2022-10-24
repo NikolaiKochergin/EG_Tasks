@@ -35,7 +35,7 @@ Transform:
   - {fileID: 1652625313350897687}
   - {fileID: 1652625313657808723}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1652625312194353356
 MonoBehaviour:
@@ -50,7 +50,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1652625312048378341}
-  _attackPeriod: 7
+  TriggerName: Attack
+  _period: 7
 --- !u!114 &1652625312194353354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dbe4e2500ad6d4bb0d508033c351a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _carrotPrefab: {fileID: 4582953628943100360, guid: 7f001cfa871ffc34382daa724347817c, type: 3}
+  _prefab: {fileID: 4582953628943100401, guid: 7f001cfa871ffc34382daa724347817c, type: 3}
   _spawnPoint: {fileID: 1652625312974429986}
 --- !u!23 &2788572281916652038 stripped
 MeshRenderer:

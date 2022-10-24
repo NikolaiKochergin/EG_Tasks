@@ -9,6 +9,8 @@ namespace Week_8_Platformer
 
         private void Start()
         {
+            transform.rotation = Quaternion.identity;
+
             var playerTransform = FindObjectOfType<Head>().transform;
             var toPlayer = (playerTransform.position - transform.position).normalized;
 

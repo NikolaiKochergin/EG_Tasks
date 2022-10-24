@@ -47,7 +47,7 @@ GameObject:
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -66,7 +66,7 @@ Transform:
   - {fileID: 929864528098863615}
   - {fileID: 929864529536970984}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &929864528847762345
 MonoBehaviour:
