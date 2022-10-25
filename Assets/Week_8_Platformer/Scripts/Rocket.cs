@@ -17,6 +17,7 @@ namespace Week_8_Platformer
         private void Update()
         {
             transform.position += Time.deltaTime * transform.forward * _speed;
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
             var toPlayer = _playerTransform.position - transform.position;
             var targetRotation = Quaternion.LookRotation(toPlayer, Vector3.forward);
 

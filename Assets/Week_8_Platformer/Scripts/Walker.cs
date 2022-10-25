@@ -16,6 +16,7 @@ namespace Week_8_Platformer
         [SerializeField] [Min(0)] private float _speed;
         [SerializeField] [Min(0)] private float _stopTime;
         [SerializeField] private Direction _currentDirection;
+        [SerializeField] private Transform _rayStart;
 
         private bool _isStopped;
 
@@ -54,6 +55,11 @@ namespace Week_8_Platformer
                     Invoke(nameof(ContinueWalk), _stopTime);
                     EventOnRightTarget?.Invoke();
                 }
+            }
+
+            if (Physics.Raycast(_rayStart.position, Vector3.down, out RaycastHit hit))
+            {
+                transform.position = hit.point;
             }
         }
 
