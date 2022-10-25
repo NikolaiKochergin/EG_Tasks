@@ -17,13 +17,17 @@ namespace Week_8_Platformer
             _player = FindObjectOfType<PlayerHealth>().transform;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             foreach (var enemy in _enemies)
             {
                 if (enemy == null)
                 {
                     _enemies.Remove(enemy);
+                    
+                    if(_enemies.Count == 0)
+                        Debug.Log("You win");
+                    
                     return;
                 }
                 
