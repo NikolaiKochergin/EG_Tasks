@@ -244,7 +244,7 @@ Transform:
   - {fileID: 7453292537424190791}
   - {fileID: 7453292536329567881}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &7453292537772948293
 Rigidbody:
@@ -348,6 +348,8 @@ MonoBehaviour:
   - {fileID: 2912200973805397840}
   - {fileID: 1241003847582801325}
   - {fileID: 6150639918659031029}
+  - {fileID: 6403926428174123335}
+  - {fileID: 8425992436029775067}
   _duration: 0.5
   _friquency: 30
 --- !u!114 &7453292537772948294
@@ -650,6 +652,11 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -5605824327705146453, guid: ac546e4418c915946b871d0e4dfb8f6d, type: 3}
   m_PrefabInstance: {fileID: 7453292536898389086}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &6403926428174123335 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4589233143200351513, guid: ac546e4418c915946b871d0e4dfb8f6d, type: 3}
+  m_PrefabInstance: {fileID: 7453292536898389086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6982219274397639605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac546e4418c915946b871d0e4dfb8f6d, type: 3}
@@ -680,3 +687,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!23 &8425992436029775067 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7818168237907453819, guid: ac546e4418c915946b871d0e4dfb8f6d, type: 3}
+  m_PrefabInstance: {fileID: 7453292536898389086}
+  m_PrefabAsset: {fileID: 0}

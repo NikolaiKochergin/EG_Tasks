@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 namespace Week_8_Platformer
 {
+    [SelectionBase]
     public class EnemyHealth : MonoBehaviour
     {
         [SerializeField] [Min(0)] private int _value = 1;
