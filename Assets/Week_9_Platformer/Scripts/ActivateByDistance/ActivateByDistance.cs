@@ -1,20 +1,35 @@
-using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Week_9_Platformer
 {
     public class ActivateByDistance : MonoBehaviour
     {
         [SerializeField] [Min(0)] private float DistanceToActivate = 20f;
+        private Activator _activator;
 
         private bool _isActive = true;
-        private Activator _activator;
-        
+
         private void Start()
         {
             _activator = FindObjectOfType<Activator>();
             _activator.Add(this);
         }
+
+        private void OnDestroy()
+        {
+            _activator.Remove(this);
+        }
+
+#if UNITY_EDITOR
+        private void OnDrawGizmosSelected()
+        {
+            Handles.color = Color.gray;
+            Handles.DrawWireDisc(transform.position, Vector3.forward, DistanceToActivate);
+        }
+#endif
 
         public void CheckDistance(Vector3 playerPosition)
         {
@@ -27,7 +42,7 @@ namespace Week_9_Platformer
             }
             else
             {
-                if (distance < DistanceToActivate) 
+                if (distance < DistanceToActivate)
                     Activate();
             }
         }
@@ -42,17 +57,6 @@ namespace Week_9_Platformer
         {
             _isActive = false;
             gameObject.SetActive(false);
-        }
-
-        private void OnDestroy()
-        {
-            _activator.Remove(this);
-        }
-
-        private void OnDrawGizmosSelected()
-        {
-            Handles.color = Color.gray;
-            Handles.DrawWireDisc(transform.position, Vector3.forward, DistanceToActivate);
         }
     }
 }
