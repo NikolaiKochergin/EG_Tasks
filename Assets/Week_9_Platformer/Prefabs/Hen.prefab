@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 7453292537772948295}
   - component: {fileID: 7453292537772948294}
   - component: {fileID: 7453292537772948297}
+  - component: {fileID: 5195379638311623622}
   m_Layer: 0
   m_Name: Hen
   m_TagString: Untagged
@@ -463,6 +464,19 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5195379638311623622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453292537772948289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a9bff508aadfa4ba9d706ac1c2c9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceToActivate: 20
 --- !u!1001 &7453292536898389086
 PrefabInstance:
   m_ObjectHideFlags: 0

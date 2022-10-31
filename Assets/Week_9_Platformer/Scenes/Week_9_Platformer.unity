@@ -1163,7 +1163,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LootHeal (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2507725279065268391, guid: ca81dc4ca772a1f459404ab1d0344722, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ca81dc4ca772a1f459404ab1d0344722, type: 3}
 --- !u!4 &321608330 stripped
@@ -1235,10 +1236,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 363549971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea174b23d251394585afd77706ccd76, type: 3}
+  m_Script: {fileID: 11500000, guid: 84e64da98b2aeeb42b70f1729e66ab01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activationDistance: 20
+  _objectsToActivate: []
+  _playerTransform: {fileID: 986313039}
 --- !u!1 &379992621
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,7 +4252,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LootHeal (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2507725279065268391, guid: ca81dc4ca772a1f459404ab1d0344722, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ca81dc4ca772a1f459404ab1d0344722, type: 3}
 --- !u!4 &1505019997 stripped

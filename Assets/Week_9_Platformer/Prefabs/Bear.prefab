@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 8154246112286834946}
   - component: {fileID: 8154246112286834949}
   - component: {fileID: 8154246112286834948}
+  - component: {fileID: -1898079130245005188}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Untagged
@@ -280,6 +281,19 @@ MonoBehaviour:
   _leftEuler: {x: 0, y: -20, z: 0}
   _rightEuler: {x: 0, y: -160, z: 0}
   _rotationSpeed: 5
+--- !u!114 &-1898079130245005188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8154246112286834945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a9bff508aadfa4ba9d706ac1c2c9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceToActivate: 20
 --- !u!1 &8154246112301881301
 GameObject:
   m_ObjectHideFlags: 0
