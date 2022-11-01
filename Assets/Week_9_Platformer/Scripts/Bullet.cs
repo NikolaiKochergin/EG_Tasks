@@ -18,11 +18,10 @@ namespace Week_9_Platformer
 
         private void OnCollisionEnter(Collision collision)
         {
-            Instantiate(_effectPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            Die();
         }
 
-        private void OnTriggerEnter(Collider other)
+        public void Die()
         {
             Instantiate(_effectPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);

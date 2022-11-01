@@ -24,7 +24,7 @@ namespace Week_9_Platformer
             }
         }
 
-        protected virtual void Shot()
+        public virtual void Shot()
         {
             var newBullet = Instantiate(_bulletPrefab, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
             newBullet.Rigidbody.velocity = _bulletSpawnPoint.forward * _bulletSpeed;

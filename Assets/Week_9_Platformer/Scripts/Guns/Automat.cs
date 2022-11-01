@@ -10,7 +10,7 @@ namespace Week_9_Platformer
         [SerializeField] private Text _bulletsText;
         [SerializeField] private PlayerArmory _playerArmory;
 
-        protected override void Shot()
+        public override void Shot()
         {
             base.Shot();
             _numberOfBullets -= 1;

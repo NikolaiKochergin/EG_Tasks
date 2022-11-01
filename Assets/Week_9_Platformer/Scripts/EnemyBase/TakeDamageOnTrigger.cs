@@ -15,7 +15,11 @@ namespace Week_9_Platformer
             
             var bullet = other.attachedRigidbody.GetComponent<Bullet>();
 
-            if (bullet) _enemyHealth.TakeDamage(bullet.Damage);
+            if (bullet)
+            {
+                _enemyHealth.TakeDamage(bullet.Damage);
+                bullet.Die();
+            }
         }
     }
 }

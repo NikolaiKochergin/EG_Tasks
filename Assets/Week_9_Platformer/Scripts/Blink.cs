@@ -34,6 +34,7 @@ namespace Week_9_Platformer
 
                 yield return null;
             }
+            SetEmissionColor(0f);
         }
 
         private void SetEmissionColor(float value)
