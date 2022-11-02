@@ -29,7 +29,7 @@ namespace Week_9_Platformer
             }
             else
             {
-                _currentCharge += Time.deltaTime;
+                _currentCharge += Time.unscaledDeltaTime;
                 _chargeIcon.SetChargeValue(_currentCharge, _maxCharge);
                 if (_currentCharge >= _maxCharge)
                 {

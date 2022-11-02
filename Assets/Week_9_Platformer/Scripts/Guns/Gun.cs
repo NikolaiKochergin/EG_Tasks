@@ -15,7 +15,7 @@ namespace Week_9_Platformer
 
         private void Update()
         {
-            _timer += Time.deltaTime;
+            _timer += Time.unscaledDeltaTime;
 
             if (_timer > _shotPeriod && Input.GetMouseButton(0))
             {
