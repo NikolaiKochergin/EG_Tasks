@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Week_9_Platformer
@@ -21,6 +22,11 @@ namespace Week_9_Platformer
                 Time.timeScale = 1.0f;
 
             Time.fixedDeltaTime = _startFixedDeltaTime * Time.timeScale;
+        }
+
+        private void OnDestroy()
+        {
+            Time.fixedDeltaTime = _startFixedDeltaTime;
         }
     }
 }

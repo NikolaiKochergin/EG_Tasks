@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: 7ba95871ddcd5f1469a95e5ac12f1805
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - PF Din Text Cond Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ec5d8865267263f46bb9628e05a653b4, type: 3}
+  - {fileID: 12800000, guid: 929c68e1db7c58142860a7a511c842c2, type: 3}
+  - {fileID: 12800000, guid: 9a7fba1092402fc449fa7e2a5bf2b01c, type: 3}
+  - {fileID: 12800000, guid: c107ad553612f8d469acb635cfa50ed2, type: 3}
+  - {fileID: 12800000, guid: 326ac99b2c832724c93856dcf3cd512a, type: 3}
+  - {fileID: 12800000, guid: 61f8a4dace6b0814294ae5ee4039fe84, type: 3}
+  - {fileID: 12800000, guid: 901e7ab53119535468b0b07a96d8de70, type: 3}
+  - {fileID: 12800000, guid: d23239e2c9df3384e8ca149b3a879365, type: 3}
+  - {fileID: 12800000, guid: 267f3e5413e455444b87c8e3592cc6ef, type: 3}
+  - {fileID: 12800000, guid: 5a4f6352d3e01584d9de9b7bf35ede37, type: 3}
+  - {fileID: 12800000, guid: 500e1803fb17a4046acfbf5f042a15aa, type: 3}
+  - {fileID: 12800000, guid: 10f0fe8b02e391b4abd62a1ccfc4c319, type: 3}
+  - {fileID: 12800000, guid: 6854352182dad974490931ee5dc8c143, type: 3}
+  - {fileID: 12800000, guid: 33b4280e46098d74ebb8b19758556fe5, type: 3}
+  - {fileID: 12800000, guid: a1779339b8be5564981ae732c5bbbbc4, type: 3}
+  - {fileID: 12800000, guid: a270447947b0458499e331c62ca96736, type: 3}
+  - {fileID: 12800000, guid: b0408d15668244946be47acb34cec81b, type: 3}
+  - {fileID: 12800000, guid: 2479acea03a01a04694164a8cb1440c4, type: 3}
+  - {fileID: 12800000, guid: d8ca6824ac98c1b46b2dbfc6361f9c95, type: 3}
+  - {fileID: 12800000, guid: 7234f643acbefa04ab181a7dc7bb28be, type: 3}
+  - {fileID: 12800000, guid: e876c44cd00f7f44fa112e983ff25e8d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
