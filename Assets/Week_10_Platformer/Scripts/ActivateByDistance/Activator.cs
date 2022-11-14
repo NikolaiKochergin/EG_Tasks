@@ -22,6 +22,8 @@ namespace Week_10_Platformer
         public void Remove(ActivateByDistance activateByDistance)
         {
             _objectsToActivate.Remove(activateByDistance);
+            if(_objectsToActivate.Count == 0)
+                Debug.Log("You win");
         }
     }
 }

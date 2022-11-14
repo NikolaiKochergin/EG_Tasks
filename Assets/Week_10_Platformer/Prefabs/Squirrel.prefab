@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 5546241887042117389}
   - component: {fileID: 7839421575548096211}
   - component: {fileID: 9161501122144298141}
+  - component: {fileID: 6526272806200110699}
   m_Layer: 0
   m_Name: Squirrel
   m_TagString: Untagged
@@ -316,6 +317,7 @@ Transform:
   - {fileID: 5840334618063900317}
   - {fileID: 761120383029386588}
   - {fileID: 7440172200706543748}
+  - {fileID: 6752945161938688975}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -350,6 +352,33 @@ MonoBehaviour:
       - m_Target: {fileID: 5754193123698092968}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Died:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4001811239198980686}
+        m_TargetAssemblyTypeName: Week_10_Platformer.PrefabCreator, Assembly-CSharp
+        m_MethodName: Create
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6526272806200110699}
+        m_TargetAssemblyTypeName: Die, Assembly-CSharp
+        m_MethodName: MakeDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -400,6 +429,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceToActivate: 20
+--- !u!114 &6526272806200110699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5840334617865192643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e31e1bbf5b2430429c8ae6a3ebb67e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5840334618063900316
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +837,81 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &816962798706080564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 5840334617865192640}
+    m_Modifications:
+    - target: {fileID: 711470268486962015, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_Name
+      value: DieFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+--- !u!114 &4001811239198980686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4386265556891419002, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+  m_PrefabInstance: {fileID: 816962798706080564}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32dbe4e2500ad6d4bb0d508033c351a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &6752945161938688975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+  m_PrefabInstance: {fileID: 816962798706080564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5840334618598965743
 PrefabInstance:
   m_ObjectHideFlags: 0

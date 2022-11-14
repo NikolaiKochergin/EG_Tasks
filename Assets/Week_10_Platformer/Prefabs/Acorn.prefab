@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4519905952088806948}
   - component: {fileID: 4519905952088806951}
   - component: {fileID: 4519905952088806950}
+  - component: {fileID: 455480655606511419}
   m_Layer: 0
   m_Name: Acorn
   m_TagString: Untagged
@@ -85,6 +86,21 @@ MonoBehaviour:
   DamageTaken:
     m_PersistentCalls:
       m_Calls: []
+  Died:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 455480655606511419}
+        m_TargetAssemblyTypeName: Die, Assembly-CSharp
+        m_MethodName: MakeDied
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4519905952088806951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +128,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageValue: 1
+--- !u!114 &455480655606511419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4519905952088806954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e31e1bbf5b2430429c8ae6a3ebb67e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4519905952309344988
 GameObject:
   m_ObjectHideFlags: 0

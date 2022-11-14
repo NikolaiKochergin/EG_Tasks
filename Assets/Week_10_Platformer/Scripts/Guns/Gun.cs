@@ -28,7 +28,8 @@ namespace Week_10_Platformer
         {
             var newBullet = Instantiate(_bulletPrefab, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
             newBullet.Rigidbody.velocity = _bulletSpawnPoint.forward * _bulletSpeed;
-            _shotSound.Play();
+            if (isActiveAndEnabled)
+                _shotSound.Play();
             _flash.SetActive(true);
             Invoke(nameof(HideFlash), 0.12f);
         }
@@ -47,7 +48,9 @@ namespace Week_10_Platformer
         {
             gameObject.SetActive(false);
         }
-        
-        public virtual void AddBullets(int numberOfBullets){}
+
+        public virtual void AddBullets(int numberOfBullets)
+        {
+        }
     }
 }
