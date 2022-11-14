@@ -10,6 +10,7 @@ namespace Week_10_Platformer
         [SerializeField] [Min(0)] private float _shotPeriod = 0.2f;
         [SerializeField] private AudioSource _shotSound;
         [SerializeField] private GameObject _flash;
+        [SerializeField] private ParticleSystem _shotEffect;
 
         private float _timer;
 
@@ -32,6 +33,7 @@ namespace Week_10_Platformer
                 _shotSound.Play();
             _flash.SetActive(true);
             Invoke(nameof(HideFlash), 0.12f);
+            _shotEffect.Play();
         }
 
         private void HideFlash()
