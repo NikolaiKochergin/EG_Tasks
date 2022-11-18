@@ -8,7 +8,10 @@ namespace Week_10_Platformer
 
         public void SetMusicEnabled(bool value)
         {
-            _music.enabled = value;
+            if (value)
+                _music.UnPause();
+            else
+                _music.Pause();
         }
 
         public void SetVolume(float value)

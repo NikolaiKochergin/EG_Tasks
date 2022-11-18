@@ -4945,7 +4945,7 @@ GameObject:
   - component: {fileID: 1207854868}
   - component: {fileID: 1207854867}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6254,11 +6254,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7453292537772948288, guid: f48183f4434d8b645ad18cf74e4edd52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.445187
+      value: -8.6
       objectReference: {fileID: 0}
     - target: {fileID: 7453292537772948288, guid: f48183f4434d8b645ad18cf74e4edd52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.2762876
+      value: 6.73
       objectReference: {fileID: 0}
     - target: {fileID: 7453292537772948288, guid: f48183f4434d8b645ad18cf74e4edd52, type: 3}
       propertyPath: m_LocalPosition.z

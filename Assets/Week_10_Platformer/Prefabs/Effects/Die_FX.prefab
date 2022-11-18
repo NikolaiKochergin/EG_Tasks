@@ -88,7 +88,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.707
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -160,7 +160,7 @@ Transform:
   m_Children:
   - {fileID: 3041876327324032676}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &2776856956906978324
 ParticleSystem:

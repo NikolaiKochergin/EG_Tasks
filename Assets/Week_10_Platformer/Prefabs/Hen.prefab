@@ -530,6 +530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DieFX
       objectReference: {fileID: 0}
+    - target: {fileID: 4386265556891419002, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
+      propertyPath: _prefab
+      value: 
+      objectReference: {fileID: 9169288082786182539, guid: 231d70bfc04697c40b53f4ee76dbbc6a, type: 3}
     - target: {fileID: 6260329551106793723, guid: 63d01a0b794f48e4ea0c6c23af75c1d4, type: 3}
       propertyPath: m_RootOrder
       value: -1
