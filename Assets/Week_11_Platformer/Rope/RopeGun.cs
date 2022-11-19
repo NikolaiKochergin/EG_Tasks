@@ -14,12 +14,16 @@ namespace Week_11_Platformer
         [SerializeField] private Hook _hook;
         [SerializeField] private Transform _spawn;
         [SerializeField] private Transform _ropeStart;
+        [SerializeField] private RopeRenderer _ropeRenderer;
         [SerializeField] [Min(0)] private float _speed;
         [SerializeField] [Min(0)] private float _maxRopeLength = 20f;
 
+        
+        
         private RopeState _currentRopeState;
         private float _length;
         private SpringJoint _springJoint;
+        
 
         private void Update()
         {
@@ -32,14 +36,21 @@ namespace Week_11_Platformer
                 {
                     _hook.gameObject.SetActive(false);
                     _currentRopeState = RopeState.Disabled;
+                    _ropeRenderer.Hide();
                 }
             }
             if(Input.GetKeyDown(KeyCode.Space))
                 DestroySpring();
+            if (_currentRopeState == RopeState.Fly || _currentRopeState == RopeState.Active)
+            {
+                _ropeRenderer.Draw(_ropeStart.position, _hook.transform.position, _length);
+            }
         }
 
         private void Shot()
         {
+            _length = 1f;
+            
             if (_springJoint)
                 Destroy(_springJoint);
 
@@ -78,6 +89,7 @@ namespace Week_11_Platformer
                 Destroy(_springJoint);
                 _currentRopeState = RopeState.Disabled;
                 _hook.gameObject.SetActive(false);
+                _ropeRenderer.Hide();
             }
         }
     }
