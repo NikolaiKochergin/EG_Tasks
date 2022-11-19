@@ -4541,6 +4541,9 @@ MonoBehaviour:
   _maxSpeed: 5
   _colliderTransform: {fileID: 1836127762}
   _crouchDuration: 15
+  _jampTorque: 15
+  _returnToIdentitySpeed: 15
+  _playerModelRotator: {fileID: 15477953}
 --- !u!75 &986313042
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -4664,7 +4667,9 @@ MonoBehaviour:
   _hook: {fileID: 1978524900}
   _spawn: {fileID: 1478043697}
   _ropeStart: {fileID: 477404003}
-  _speed: 15
+  _ropeRenderer: {fileID: 1117396228}
+  _playerMove: {fileID: 986313041}
+  _speed: 26
   _maxRopeLength: 20
 --- !u!1 &1011825730
 GameObject:
@@ -4973,7 +4978,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -4981,8 +4986,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0.09055138
+        time: 0.040222168
+        value: 0.14960289
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -5024,7 +5029,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
@@ -5040,7 +5045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117396227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 1.82, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9302,7 +9307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978524899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.47, y: 4.76, z: -0.09986852}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
