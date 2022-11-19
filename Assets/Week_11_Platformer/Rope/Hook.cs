@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Week_11_Platformer
@@ -7,7 +6,8 @@ namespace Week_11_Platformer
     {
         [SerializeField] private Collider _collider;
         [SerializeField] private Collider _playerCollider;
-        
+        [SerializeField] private RopeGun _ropeGun;
+
         private FixedJoint _fixedJoint;
 
         [field: SerializeField] public Rigidbody Rigidbody { get; private set; }
@@ -24,12 +24,14 @@ namespace Week_11_Platformer
                 _fixedJoint = gameObject.AddComponent<FixedJoint>();
                 if (collision.rigidbody)
                     _fixedJoint.connectedBody = collision.rigidbody;
+                
+                _ropeGun.CreateSpring();
             }
         }
 
         public void StopFix()
         {
-            if(_fixedJoint)
+            if (_fixedJoint)
                 Destroy(_fixedJoint);
         }
     }
