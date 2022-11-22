@@ -13,6 +13,7 @@ namespace Week_11_Platformer
         private bool _invulnerable;
 
         public UnityEvent DamageTaken;
+        public UnityEvent Died;
 
         private void Start()
         {
@@ -28,7 +29,10 @@ namespace Week_11_Platformer
                 if (_value <= 0)
                 {
                     _value = 0;
-                    Die();
+                    _healthUI.DisplayHealth(_value);
+                    _invulnerable = true;
+                    Died?.Invoke();
+                    return;
                 }
 
                 _invulnerable = true;
@@ -50,11 +54,6 @@ namespace Week_11_Platformer
                 _value = _maxValue;
             _addHealthSound.Play();
             _healthUI.DisplayHealth(_value);
-        }
-
-        private void Die()
-        {
-            Debug.Log("You Lose");
         }
     }
 }
