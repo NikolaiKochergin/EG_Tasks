@@ -4,6 +4,7 @@ namespace Week_11_Platformer
 {
     public class Hook : MonoBehaviour
     {
+        [SerializeField] private Collider[] _borderColliders;
         [SerializeField] private Collider _collider;
         [SerializeField] private Collider _playerCollider;
         [SerializeField] private RopeGun _ropeGun;
@@ -15,6 +16,8 @@ namespace Week_11_Platformer
         private void Start()
         {
             Physics.IgnoreCollision(_collider, _playerCollider);
+            foreach (var collider in _borderColliders)
+                Physics.IgnoreCollision(_collider, collider);
         }
 
         private void OnCollisionEnter(Collision collision)
