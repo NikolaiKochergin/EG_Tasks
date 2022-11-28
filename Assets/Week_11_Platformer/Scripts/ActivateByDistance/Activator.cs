@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Week_11_Platformer
 {
@@ -7,6 +8,8 @@ namespace Week_11_Platformer
     {
         [SerializeField] private List<ActivateByDistance> _objectsToActivate;
         [SerializeField] private Transform _playerTransform;
+
+        public UnityEvent AllEneniesDied;
 
         private void Update()
         {
@@ -23,7 +26,7 @@ namespace Week_11_Platformer
         {
             _objectsToActivate.Remove(activateByDistance);
             if(_objectsToActivate.Count == 0)
-                Debug.Log("You win");
+                AllEneniesDied?.Invoke();
         }
     }
 }

@@ -31,7 +31,7 @@ Transform:
   - {fileID: 1063355299884243583}
   - {fileID: 1063355298831695515}
   m_Father: {fileID: 669758161061423585}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &669758161061423598
 GameObject:
@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gunIndex: 1
-  _numberOfBullets: 30
+  _numberOfBullets: 60
 --- !u!135 &669758161061423584
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -113,7 +113,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 669758160165578772}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 185aa1afb49636848bf8c868098aa2cf, type: 3}
@@ -181,7 +180,6 @@ PrefabInstance:
       value: GunForLoot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 185aa1afb49636848bf8c868098aa2cf, type: 3}
 --- !u!4 &1063355299884243583 stripped
 Transform:
@@ -193,12 +191,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 669758160165578772}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 705dfe03cbed4c8488be74862380f30e, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 705dfe03cbed4c8488be74862380f30e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -253,7 +250,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 705dfe03cbed4c8488be74862380f30e, type: 3}
 --- !u!4 &1063355298831695515 stripped
 Transform:

@@ -8,7 +8,7 @@ namespace Week_11_Platformer
         
         private void OnTriggerEnter(Collider other)
         {
-            var player = other.attachedRigidbody?.GetComponent<PlayerDie>();
+            var player = other.attachedRigidbody?.GetComponent<PlayerDeactivator>();
         
             if(player)
                 gameObject.SetActive(false);
